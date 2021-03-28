@@ -10,7 +10,7 @@ import (
 
 func Register(file string) {
 	fmt.Println("api registration init")
-	err := gonfig.GetConf(file, A)
+	err := gonfig.GetConf(file, &A)
 
 	if err != nil {
 		fmt.Println("error loading api registration")
