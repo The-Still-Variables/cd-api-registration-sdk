@@ -15,6 +15,7 @@ type APIRegistration struct {
 	APIList     []struct {
 		URL          string `json:"url"`
 		Description  string `json:"description"`
+		Method       string `json:"method"`
 		Dependencies []struct {
 			Category    string `json:"category"`
 			Name        string `json:"name"`
